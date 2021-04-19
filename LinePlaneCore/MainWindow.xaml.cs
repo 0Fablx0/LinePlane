@@ -31,7 +31,7 @@ namespace LinePlaneCore
         private RegistrationWindow Registration;
         private EnterWindow Avtoauthorization;
 
-        private readonly List<Line> _lines = new List<Line>();
+        private readonly List<Shape> _lines = new List<Shape>();
 
         private List<Border> borders = new List<Border>();
 
