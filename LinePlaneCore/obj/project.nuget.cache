@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "vXBMDqMENJUPhPzfWPJRmwCVPv38Czzwm09dPXj6DtsRD9gpw8Eg50MjKnZHzwhqcp86Ud6bn7u5bu8pHLwSsw==",
+  "dgSpecHash": "z4pDEapsD+HqIPlL9B+pofSust5MVgRM1ubBTykw6+Ayjdvv3ENjHSdG1Q6tX+3UsLNuUMCuBAfhHfgCO+ZIYQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Админ\\Documents\\GitHub\\LinePlaneCore\\LinePlaneCore\\LinePlaneCore.csproj",
+  "projectFilePath": "C:\\Users\\Админ\\Documents\\GitHub\\LinePlane\\LinePlaneCore\\LinePlaneCore.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Админ\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\Админ\\.nuget\\packages\\materialdesigncolors\\2.0.0\\materialdesigncolors.2.0.0.nupkg.sha512",

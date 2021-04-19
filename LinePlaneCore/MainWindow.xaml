@@ -7,7 +7,7 @@
         mc:Ignorable="d"
         xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
         Title="FloorPlan" WindowStartupLocation="CenterScreen" 
-        Icon="/Icon.png"
+        Icon="/Resources/Icon.png"
          WindowState="Maximized"  
         MinHeight="576"
         MinWidth="1000" WindowStyle="ThreeDBorderWindow"
@@ -40,7 +40,7 @@
         <Border BorderBrush="Black" BorderThickness="0"  Background="#66292929" Grid.Row="0" Grid.ColumnSpan="4"/>
 
         <Button Background="{x:Null}"  HorizontalAlignment="Left" Width="60" Height="35" Style="{StaticResource MaterialDesignFlatButton}" Margin="60,10,0,15" Grid.Column="0" VerticalAlignment="Center"  Click="Cancel_button">
-            <Image  Source="/next.png"  RenderOptions.BitmapScalingMode="Fant" Height="29" RenderTransformOrigin="0.5,0.5" Width="27">
+            <Image  Source="/Resources/next.png"  RenderOptions.BitmapScalingMode="Fant" Height="29" RenderTransformOrigin="0.5,0.5" Width="27">
 
                 <Image.RenderTransform>
                     <TransformGroup>
