@@ -31,26 +31,11 @@ namespace LinePlaneCore
         private RegistrationWindow Registration;
         private EnterWindow Avtoauthorization;
 
-        private readonly List<Shape> _lines = new List<Shape>();
-
-        private List<Border> borders = new List<Border>();
-
-
+        private readonly List<Line> _lines = new List<Line>();
         public MainWindow()
         {
             InitializeComponent();
             a = new Draw_Cursor(this);
-        }
-
-        private void SetBorder()
-        {
-            borders.Add(mainroom);
-            borders.Add(kitchen);
-            borders.Add(bathroom);
-            borders.Add(wardrobe);
-            borders.Add(interior);
-            borders.Add(appliances);
-            borders.Add(bedroom);
         }
 
         internal Point Get_Cursor_Point(MouseEventArgs e) => Mouse.GetPosition(this);
@@ -223,67 +208,8 @@ namespace LinePlaneCore
 
         private void Button_Hand(object sender, RoutedEventArgs e)
         {
-
             a = new Draw_Square(this,1);
-
             Display_Area.Cursor = Cursors.Hand;
-        }
-
-        private void Button_Mainroom(object sender, RoutedEventArgs e)
-        {
-            SetBorder();
-            Button_Room(mainroom);
-        }
-
-        private void Button_Bedroom(object sender, RoutedEventArgs e)
-        {
-            SetBorder();
-            Button_Room(bedroom);
-        }
-
-        private void Button_Kitchen(object sender, RoutedEventArgs e)
-        {
-            SetBorder();
-            Button_Room(kitchen);
-        }
-
-        private void Button_Appliances(object sender, RoutedEventArgs e)
-        {
-            SetBorder();
-            Button_Room(appliances);
-        }
-
-        private void Button_Wardrobe(object sender, RoutedEventArgs e)
-        {
-            SetBorder();
-            Button_Room(wardrobe);
-        }
-
-        private void Button_Bathroom(object sender, RoutedEventArgs e)
-        {
-            SetBorder();
-            Button_Room(bathroom);
-        }
-
-        private void Button_Interior(object sender, RoutedEventArgs e)
-        {
-            SetBorder();
-            Button_Room(interior);
-        }
-
-        private void Button_Room(Border item)
-        {
-            SetBorder();
-
-            if (item.Visibility == Visibility.Hidden)
-                item.Visibility = Visibility.Visible;
-            else
-                item.Visibility = Visibility.Hidden;
-
-            foreach (var i in borders.Where(x => x != item))
-            {
-                i.Visibility = Visibility.Hidden;
-            }
         }
     }
 }

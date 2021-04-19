@@ -110,14 +110,12 @@ namespace LinePlaneCore
             First_clic = !First_clic;
         }
 
-
         public void Choise_Mouse_Click (MouseButtonEventArgs e)
         {
             line.Stroke = new SolidColorBrush(Colors.Gray);
             line.StrokeThickness = 3;
             line.StrokeDashCap = PenLineCap.Round;
         }
-
 
     }
 
@@ -136,10 +134,8 @@ namespace LinePlaneCore
         private double widith;
         private double height;
         private Rectangle shape;
-
         Point Offset;
         UIElement dragObject;
-
 
         public Draw_Square(MainWindow window, int size) {
 
@@ -175,7 +171,6 @@ namespace LinePlaneCore
 
             shape.MouseRightButtonDown += Choise_Mouse_Click;
 
-
             shape.Height = height;
             shape.Width = widith;
             var brash = new BrushConverter();
@@ -208,12 +203,12 @@ namespace LinePlaneCore
         public void Draw(MouseButtonEventArgs e, System.Windows.Controls.Panel canvas) {
 
             if (shape != null)
-
-            shape.Fill = new SolidColorBrush(Colors.Black);
+            {
+                shape.Fill = new SolidColorBrush(Colors.Black);
+            }
 
             shape = null;
         }
-
 
         public void Choise_Mouse_Click(object sender, MouseButtonEventArgs e)
         {
@@ -230,7 +225,6 @@ namespace LinePlaneCore
             ((Rectangle)dragObject).StrokeDashCap = PenLineCap.Round;
             ((Rectangle)dragObject).StrokeDashArray.Add(2);
         }
-
 
     }
 }
