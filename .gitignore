@@ -397,3 +397,4 @@ FodyWeavers.xsd
 # End of https://www.toptal.com/developers/gitignore/api/visualstudio,windows
 .vs/LinePlaneCore/v16/.suo
 .vs/LinePlaneCore/DesignTimeBuild/.dtbcache.v2
+.vs/LinePlaneCore/v16/.suo
