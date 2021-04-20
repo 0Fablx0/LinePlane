@@ -240,7 +240,7 @@ namespace LinePlaneCore
         {
 
 
-            a = new Draw_Square(this,100, 100);
+            a = new Draw_Square(this,1);
 
             Display_Area.Cursor = Cursors.Hand;
         }
