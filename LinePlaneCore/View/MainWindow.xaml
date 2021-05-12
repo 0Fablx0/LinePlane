@@ -17,7 +17,7 @@
         MinWidth="1000" WindowStyle="ThreeDBorderWindow"
       
          d:DesignWidth="1264.864" d:DesignHeight="1020.166"
-         Cursor="{Binding WindowCursor}"
+         Cursor="Arrow"
         >
 
     <Window.DataContext>
@@ -335,8 +335,8 @@
             Background="#FFEEEEF0"
             BorderThickness="0"
             MinHeight="530"
-            MinWidth="500"
-            MaxWidth="400"
+            MinWidth="600"
+            MaxWidth="600"
             HorizontalAlignment="Center"
             VerticalAlignment="Center"
             ItemsSource="{Binding FurnitureList}"
@@ -359,11 +359,11 @@
                 </Grid>
         </Border>
 
-            <Border Background="#7FB9B9C5" Height="25" VerticalAlignment="Top" Visibility="{Binding CartList}" Width="480" CornerRadius="5">
+            <Border Background="#7FB9B9C5" Height="25" VerticalAlignment="Top" Visibility="{Binding CartList}" Width="580" CornerRadius="5">
                 <Grid>
                     <TextBox Text="Кол-во" Margin="10,0,0,0" Width="150" FontFamily="Poiret One" HorizontalAlignment="Left" FontSize="17" BorderThickness="0,0,0,0" IsHitTestVisible="False" Cursor="IBeam" VerticalAlignment="Top"/>
                     <TextBox Text="Наименование" Margin="80,0,0,0" Width="120" FontFamily="Poiret One" HorizontalAlignment="Left" FontSize="17" BorderThickness="0,0,0,0" IsHitTestVisible="False" Cursor="IBeam" VerticalAlignment="Top"/>
-                    <TextBox Text="Ссылка" Margin="240,0,0,0" Width="60" FontFamily="Poiret One" HorizontalAlignment="Left" FontSize="17" BorderThickness="0,0,0,0" IsHitTestVisible="False" Cursor="IBeam" VerticalAlignment="Top"/>
+                    <TextBox Text="Ссылка" Margin="310,0,0,0" Width="60" FontFamily="Poiret One" HorizontalAlignment="Left" FontSize="17" BorderThickness="0,0,0,0" IsHitTestVisible="False" Cursor="IBeam" VerticalAlignment="Top"/>
                     <TextBox Text="Цена" Margin="0,0,5,0" Width="50" FontFamily="Poiret One" HorizontalAlignment="Right" FontSize="17" BorderThickness="0,0,0,0" IsHitTestVisible="False" Cursor="IBeam" VerticalAlignment="Top"/>
                 </Grid>
             </Border>
@@ -591,7 +591,7 @@
                                 </Button.Effect>
                                 <TextBlock Text="Кухонная тумба"/>
                                 <Button.InputBindings>
-                                    <MouseBinding Command="{Binding SpawnShapeCommand}" CommandParameter="" MouseAction="LeftClick"/>
+                                    <MouseBinding Command="{Binding SpawnShapeCommand}" CommandParameter="KitchenCabinet" MouseAction="LeftClick"/>
                                 </Button.InputBindings>
                             </Button>
 
@@ -601,7 +601,7 @@
                                 </Button.Effect>
                                 <TextBlock Text="Тумба с раковиной"/>
                                 <Button.InputBindings>
-                                    <MouseBinding Command="{Binding SpawnShapeCommand}" CommandParameter="" MouseAction="LeftClick"/>
+                                    <MouseBinding Command="{Binding SpawnShapeCommand}" CommandParameter="CabinetWithSink" MouseAction="LeftClick"/>
                                 </Button.InputBindings>
                             </Button>
 
@@ -611,7 +611,7 @@
                                 </Button.Effect>
                                 <TextBlock Text="Стол квадратный(мал)"/>
                                 <Button.InputBindings>
-                                    <MouseBinding Command="{Binding SpawnShapeCommand}" CommandParameter="" MouseAction="LeftClick"/>
+                                    <MouseBinding Command="{Binding SpawnShapeCommand}" CommandParameter="SquareTable" MouseAction="LeftClick"/>
                                 </Button.InputBindings>
                             </Button>
 
@@ -622,7 +622,7 @@
 
                                 <TextBlock Text="Стол прямоугольный(бол)"/>
                                 <Button.InputBindings>
-                                    <MouseBinding Command="{Binding SpawnShapeCommand}" CommandParameter="" MouseAction="LeftClick"/>
+                                    <MouseBinding Command="{Binding SpawnShapeCommand}" CommandParameter="RectangularTable" MouseAction="LeftClick"/>
                                 </Button.InputBindings>
                             </Button>
 
@@ -634,7 +634,7 @@
                                 </Button.Effect>
                                 <TextBlock Text="Стол круглый"/>
                                 <Button.InputBindings>
-                                    <MouseBinding Command="{Binding SpawnShapeCommand}" CommandParameter="" MouseAction="LeftClick"/>
+                                    <MouseBinding Command="{Binding SpawnShapeCommand}" CommandParameter="RoundTable" MouseAction="LeftClick"/>
                                 </Button.InputBindings>
                             </Button>
 
@@ -645,7 +645,7 @@
 
                                 <TextBlock Text="Стул стандартный"/>
                                 <Button.InputBindings>
-                                    <MouseBinding Command="{Binding SpawnShapeCommand}" CommandParameter="" MouseAction="LeftClick"/>
+                                    <MouseBinding Command="{Binding SpawnShapeCommand}" CommandParameter="Chair" MouseAction="LeftClick"/>
                                 </Button.InputBindings>
                             </Button>
                         </Grid>
@@ -676,7 +676,7 @@
                                 </Button.Effect>
                                 <TextBlock Text="Телевизор"/>
                                 <Button.InputBindings>
-                                    <MouseBinding Command="{Binding SpawnShapeCommand}" CommandParameter="" MouseAction="LeftClick"/>
+                                    <MouseBinding Command="{Binding SpawnShapeCommand}" CommandParameter="TV" MouseAction="LeftClick"/>
                                 </Button.InputBindings>
                             </Button>
 
@@ -686,7 +686,7 @@
                                 </Button.Effect>
                                 <TextBlock Text="Холодильник"/>
                                 <Button.InputBindings>
-                                    <MouseBinding Command="{Binding SpawnShapeCommand}" CommandParameter="" MouseAction="LeftClick"/>
+                                    <MouseBinding Command="{Binding SpawnShapeCommand}" CommandParameter="Fridge" MouseAction="LeftClick"/>
                                 </Button.InputBindings>
                             </Button>
 
@@ -696,7 +696,7 @@
                                 </Button.Effect>
                                 <TextBlock Text="Холодильник двухдверный"/>
                                 <Button.InputBindings>
-                                    <MouseBinding Command="{Binding SpawnShapeCommand}" CommandParameter="" MouseAction="LeftClick"/>
+                                    <MouseBinding Command="{Binding SpawnShapeCommand}" CommandParameter="Fridge2" MouseAction="LeftClick"/>
                                 </Button.InputBindings>
                             </Button>
 
@@ -707,7 +707,7 @@
 
                                 <TextBlock Text="Плита"/>
                                 <Button.InputBindings>
-                                    <MouseBinding Command="{Binding SpawnShapeCommand}" CommandParameter="" MouseAction="LeftClick"/>
+                                    <MouseBinding Command="{Binding SpawnShapeCommand}" CommandParameter="Stove" MouseAction="LeftClick"/>
                                 </Button.InputBindings>
                             </Button>
 
@@ -718,10 +718,10 @@
                                     <DropShadowEffect BlurRadius="10" Color="White" ShadowDepth="1" RenderingBias="Performance" Opacity="1"/>
                                 </Button.Effect>
 
-                                <TextBlock Text="Стиральная машина"/>
+                                <TextBlock Text="Посудомоечная машина"/>
 
                                 <Button.InputBindings>
-                                    <MouseBinding Command="{Binding SpawnShapeCommand}" CommandParameter="" MouseAction="LeftClick"/>
+                                    <MouseBinding Command="{Binding SpawnShapeCommand}" CommandParameter="WasingMashine" MouseAction="LeftClick"/>
                                 </Button.InputBindings>
                             </Button>
 
@@ -753,7 +753,7 @@
                                 </Button.Effect>
                                 <TextBlock Text="Гардероб"/>
                                 <Button.InputBindings>
-                                    <MouseBinding Command="{Binding SpawnShapeCommand}" CommandParameter="" MouseAction="LeftClick"/>
+                                    <MouseBinding Command="{Binding SpawnShapeCommand}" CommandParameter="Wardrobe" MouseAction="LeftClick"/>
                                 </Button.InputBindings>
                             </Button>
 
@@ -763,7 +763,7 @@
                                 </Button.Effect>
                                 <TextBlock Text="Шкаф купе"/>
                                 <Button.InputBindings>
-                                    <MouseBinding Command="{Binding SpawnShapeCommand}" CommandParameter="" MouseAction="LeftClick"/>
+                                    <MouseBinding Command="{Binding SpawnShapeCommand}" CommandParameter="WardrobeCompartment" MouseAction="LeftClick"/>
                                 </Button.InputBindings>
                             </Button>
 
@@ -773,7 +773,7 @@
                                 </Button.Effect>
                                 <TextBlock Text="Книжный шкаф"/>
                                 <Button.InputBindings>
-                                    <MouseBinding Command="{Binding SpawnShapeCommand}" CommandParameter="" MouseAction="LeftClick"/>
+                                    <MouseBinding Command="{Binding SpawnShapeCommand}" CommandParameter="BookCase" MouseAction="LeftClick"/>
                                 </Button.InputBindings>
                             </Button>
 
@@ -783,7 +783,7 @@
                                 </Button.Effect>
                                 <TextBlock Text="Сервант"/>
                                 <Button.InputBindings>
-                                    <MouseBinding Command="{Binding SpawnShapeCommand}" CommandParameter="" MouseAction="LeftClick"/>
+                                    <MouseBinding Command="{Binding SpawnShapeCommand}" CommandParameter="SideBoard" MouseAction="LeftClick"/>
                                 </Button.InputBindings>
                             </Button>
 
@@ -795,7 +795,7 @@
 
                                 <TextBlock Text="Тумба для обуви"/>
                                 <Button.InputBindings>
-                                    <MouseBinding Command="{Binding SpawnShapeCommand}" CommandParameter="" MouseAction="LeftClick"/>
+                                    <MouseBinding Command="{Binding SpawnShapeCommand}" CommandParameter="ShoeCabinet" MouseAction="LeftClick"/>
                                 </Button.InputBindings>
                             </Button>
 
@@ -827,7 +827,7 @@
                                 </Button.Effect>
                                 <TextBlock Text="Раковина"/>
                                 <Button.InputBindings>
-                                    <MouseBinding Command="{Binding SpawnShapeCommand}" CommandParameter="" MouseAction="LeftClick"/>
+                                    <MouseBinding Command="{Binding SpawnShapeCommand}" CommandParameter="Sink" MouseAction="LeftClick"/>
                                 </Button.InputBindings>
                             </Button>
 
@@ -837,7 +837,7 @@
                                 </Button.Effect>
                                 <TextBlock Text="Ванная"/>
                                 <Button.InputBindings>
-                                    <MouseBinding Command="{Binding SpawnShapeCommand}" CommandParameter="" MouseAction="LeftClick"/>
+                                    <MouseBinding Command="{Binding SpawnShapeCommand}" CommandParameter="Bath" MouseAction="LeftClick"/>
                                 </Button.InputBindings>
                             </Button>
 
@@ -847,7 +847,7 @@
                                 </Button.Effect>
                                 <TextBlock Text="Душ"/>
                                 <Button.InputBindings>
-                                    <MouseBinding Command="{Binding SpawnShapeCommand}" CommandParameter="" MouseAction="LeftClick"/>
+                                    <MouseBinding Command="{Binding SpawnShapeCommand}" CommandParameter="Shower" MouseAction="LeftClick"/>
                                 </Button.InputBindings>
                             </Button>
 
@@ -858,7 +858,7 @@
 
                                 <TextBlock Text="Унитаз"/>
                                 <Button.InputBindings>
-                                    <MouseBinding Command="{Binding SpawnShapeCommand}" CommandParameter="" MouseAction="LeftClick"/>
+                                    <MouseBinding Command="{Binding SpawnShapeCommand}" CommandParameter="Toilet" MouseAction="LeftClick"/>
                                 </Button.InputBindings>
                             </Button>
 
@@ -871,7 +871,7 @@
 
                                 <TextBlock Text="Джакузи"/>
                                 <Button.InputBindings>
-                                    <MouseBinding Command="{Binding SpawnShapeCommand}" CommandParameter="" MouseAction="LeftClick"/>
+                                    <MouseBinding Command="{Binding SpawnShapeCommand}" CommandParameter="HotTub" MouseAction="LeftClick"/>
                                 </Button.InputBindings>
                             </Button>
 
@@ -904,7 +904,7 @@
                                 </Button.Effect>
                                 <TextBlock Text="Зеркало"/>
                                 <Button.InputBindings>
-                                    <MouseBinding Command="{Binding SpawnShapeCommand}" CommandParameter="" MouseAction="LeftClick"/>
+                                    <MouseBinding Command="{Binding SpawnShapeCommand}" CommandParameter="Mirror" MouseAction="LeftClick"/>
                                 </Button.InputBindings>
                             </Button>
 
@@ -914,7 +914,7 @@
                                 </Button.Effect>
                                 <TextBlock Text="Растения"/>
                                 <Button.InputBindings>
-                                    <MouseBinding Command="{Binding SpawnShapeCommand}" CommandParameter="" MouseAction="LeftClick"/>
+                                    <MouseBinding Command="{Binding SpawnShapeCommand}" CommandParameter="Plants" MouseAction="LeftClick"/>
                                 </Button.InputBindings>
                             </Button>
 
@@ -924,7 +924,7 @@
                                 </Button.Effect>
                                 <TextBlock Text="Камин"/>
                                 <Button.InputBindings>
-                                    <MouseBinding Command="{Binding SpawnShapeCommand}" CommandParameter="" MouseAction="LeftClick"/>
+                                    <MouseBinding Command="{Binding SpawnShapeCommand}" CommandParameter="FirePlace" MouseAction="LeftClick"/>
                                 </Button.InputBindings>
                             </Button>
 
@@ -935,7 +935,7 @@
 
                                 <TextBlock Text="Иконостас"/>
                                 <Button.InputBindings>
-                                    <MouseBinding Command="{Binding SpawnShapeCommand}" CommandParameter="" MouseAction="LeftClick"/>
+                                    <MouseBinding Command="{Binding SpawnShapeCommand}" CommandParameter="Iconostasis" MouseAction="LeftClick"/>
                                 </Button.InputBindings>
                             </Button>
 
@@ -946,7 +946,7 @@
                                 </Button.Effect>
                                 <TextBlock Text="Аквариум"/>
                                 <Button.InputBindings>
-                                    <MouseBinding Command="{Binding SpawnShapeCommand}" CommandParameter="" MouseAction="LeftClick"/>
+                                    <MouseBinding Command="{Binding SpawnShapeCommand}" CommandParameter="Aquarium" MouseAction="LeftClick"/>
                                 </Button.InputBindings>
                             </Button>
 
@@ -957,7 +957,7 @@
 
                                 <TextBlock Text="Пианино"/>
                                 <Button.InputBindings>
-                                    <MouseBinding Command="{Binding SpawnShapeCommand}" CommandParameter="" MouseAction="LeftClick"/>
+                                    <MouseBinding Command="{Binding SpawnShapeCommand}" CommandParameter="Piano" MouseAction="LeftClick"/>
                                 </Button.InputBindings>
                             </Button>
                         </Grid>

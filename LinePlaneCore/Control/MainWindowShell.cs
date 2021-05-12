@@ -13,6 +13,7 @@ using LinePlaneCore.Model.Server;
 using System.Windows.Data;
 using System.Collections.ObjectModel;
 using LinePlaneCore.Model;
+using System.Diagnostics;
 
 namespace LinePlaneCore.Control
 {
@@ -696,6 +697,26 @@ namespace LinePlaneCore.Control
 
 
         #endregion
+
+        #region  Перейти по ссылке
+
+        public ICommand GoToURLCommand { get; }
+
+        private void OnGoToURLCommandExecuted(object p)
+        {
+            if (new Uri(p as string).IsFile)
+            {
+                Process.Start(new ProcessStartInfo("explorer.exe", " /select, " + p as string));
+            }
+            else
+            {
+                Process.Start(p as string);
+            }
+        }
+
+        private bool CanGoToURLCommandExecuted(object p) => true;
+
+        #endregion
         #endregion
 
         public MainWindowShell()
@@ -746,6 +767,8 @@ namespace LinePlaneCore.Control
             DownloadSaveCommand = new ActionCommand(OnDownloadSaveCommandExecuted, CanDownloadSaveCommandExecuted);
             DeleteSaveSlotCommand = new ActionCommand(OnDeleteSaveSlotCommandExecuted, CanDeleteSaveSlotCommandExecuted);
             #endregion
+
+            GoToURLCommand = new ActionCommand(OnGoToURLCommandExecuted, CanGoToURLCommandExecuted);
         }
 
     }

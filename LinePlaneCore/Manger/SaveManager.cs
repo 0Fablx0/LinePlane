@@ -233,31 +233,7 @@ namespace LinePlaneCore.Manger
                         }
 
                     }
-                    // foreach (var x in m.Projects.Where(obj => obj._IdConservation == IdConservation))
-                    // {
-                    // IdConservation = x._Id;
-                    //
-                    // var deleteСoordinates =
-                    // from t in db.Сoordinates
-                    // where t._Id == x._IdСoordinates
-                    // select t;
-                    //
-                    // foreach (var t in deleteСoordinates)
-                    // {
-                    // db.Сoordinates.Remove(t);
-                    //
-                    // }
-                    //
-                    // try
-                    // {
-                    // db.SaveChanges();
-                    // }
-                    // catch
-                    // {
-                    // }
-                    //
-                    // }
-                    //
+                    
                     using (LinePlaneContext db = new LinePlaneContext())
                     {
                         var deleteProject =

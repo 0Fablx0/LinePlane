@@ -22,20 +22,5 @@ namespace LinePlaneCore
             InitializeComponent();
         }
 
-
-       /* private void Registration_button(object sender, RoutedEventArgs e)
-        {
-                try
-                {
-                    UserDB.Add(client);
-                    UserDB.SaveChanges();
-                    this.Close();
-                }
-                catch
-                {
-                    MessageBox.Show("Такой пользователь уже существует");
-                }
-            }
-        }*/
     }
 }

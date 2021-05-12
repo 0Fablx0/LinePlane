@@ -10,6 +10,5 @@ namespace LinePlaneCore.Manger
     {
         internal static int UserID { get; set; }
         internal static string Username { get; set; }
-        //internal static int IDSave { get; set; }
     }
 }
